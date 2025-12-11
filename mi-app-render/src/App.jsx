@@ -6,7 +6,7 @@ function App() {
   const [peliculas, setPeliculas] = useState([])
   const consultarPeliculas = async () => {
     const apiKey = import.meta.env.VITE_TMDB_API_KEY;
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es-ES&page=1`;
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es-ES&page=2`;
 
     try {
       const response = await fetch(url);
